@@ -1,0 +1,384 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.header
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("https://images.hdqwalls.com/download/yamaha-r1-valentino-rossi-5k-96-1336x768.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+    height: 50px;
+    opacity: 0.5;
+}
+
+.menu_bar{
+    flex: 1;
+    text-align: right;
+}
+.menu_bar ul li 
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+
+.menu_bar ul li a
+{
+    color: beige;
+    text-decoration: none;
+    font-size: 13px;
+}
+li ::after
+{
+    content: '';
+    position: absolute;
+    background: #f44336;
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+
+}
+
+li:hover ::after
+   {
+    width: 70%;
+   }
+    
+   .text-on-page{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top :50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+
+   }
+
+   .text-on-page h1{
+    font-size: 62px;
+
+   }
+
+
+   .text-on-page p {
+
+    margin: auto;
+    font-size: 20px;
+   }
+
+   .visit
+   {
+    display: inline-block;
+    text-decoration: none;
+    color: white ;
+    border: 1px solid white;
+    padding: 13px 35px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+   }
+
+   .visit:hover
+   {
+    border: 1px solid burlywood;
+    background: burlywood;
+    transition: 1s;
+   }
+
+
+
+   nav .fa{
+    display: none;}
+
+    .intro{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+    .headintro
+    {
+        font-style: italic;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+   @media (max-width : 700px)
+   {
+
+    .text-on-page h1{
+        font-size: 20px;}
+
+.menu_bar ul li
+{
+    display: block;
+
+}
+
+.menu_bar
+{
+    position: absolute;
+    background: black;
+    height: 99vh;
+    width:199px ;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+}
+
+nav .fa{
+    display: block;
+    color: #fff;
+    margin: 11px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.aboutdiv
+{
+    flex-direction: column;
+}
+
+.abtimg{
+    width: 100%;
+    height: auto;
+}
+   }
+
+
+   /******************************************aboutus*************************************/
+
+
+
+.aboutus {
+width: 51%;
+margin: auto;
+text-align: center;
+padding-top: 99px;
+}
+
+.aboutus h1{
+font-size: 35px;
+font-weight: 600;
+
+
+}
+
+.aboutus p{
+    color: black;
+    opacity: 0.5;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 23px;
+    padding: 11px;
+}
+
+.aboutdiv {
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.title1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: goldenrod;
+    text-align: center;
+}
+
+.title1 p{
+    color: blue;
+    opacity: 0.5;
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.abtus {
+    color:midnightblue;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.mot {
+    color: #f44336;
+}
+
+.acc 
+{
+    color:#f44336
+}
+
+
+/*****************************************sponsors************************************************/
+
+
+.sponsors{
+    width: auto;
+    margin: auto;
+    text-align:center ;
+    padding: 49;
+}
+
+.title2
+{
+    flex-basis: 33%;
+    border-radius: 11px;
+    margin-bottom: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.title2 img{
+    width: 40%;
+    height: 40%;
+}
+
+.spon{
+    color:darkblue;
+    font-style: italic;
+}
+
+.sponp{
+    color:black;
+    opacity: 0.5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+}
+/*****************************************dos*********************************/
+
+.dos
+{
+    width: 81%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+ .title3{
+
+    flex-basis: 32%;
+    
+    margin-bottom: 6%;
+    text-align: left;
+
+}
+ 
+.title3 img {
+
+    width: 40%;
+    height: 40%;
+    align-content: center;
+    border-radius: 11px;
+    padding-left: 30% ;
+}
+ .title3 p{
+    font-style: italic;
+    color: goldenrod;
+    opacity: 0.5;
+    text-align: center;
+    
+ 
+}
+  h3{
+    text-align: center;
+    color: black;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dos h1{
+    font-style:normal;
+
+}
+#doid{
+    color: red;
+    opacity: 0.5;
+    font-style:italic;
+    font-family:cursive; 
+    }
+.manh {
+    color: darkblue;
+    font-family: cursive;
+    font-style: italic;
+}
+/************************************contactus*******************************/
+
+.contactus {
+    margin: 100px auto;
+    width: 80%;
+   background-image: url(https://media.istockphoto.com/photos/-picture-id1311934969?k=20&m=1311934969&s=612x612&w=0&h=ftaxrSpkUB_ftSu-Zcxp44C1pBpxntMzNFjf5rcXPkw=);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#contid{
+    padding-left:0 ;
+}
+
+#contaid{padding-left: 50%;
+ display: inline-block;
+ text-decoration: none;
+ color: white ;
+ border: 1px solid white;
+ padding: 13px 35px;
+ font-size: 14px;
+ background: transparent;
+ position: relative;
+ cursor: pointer;
+}
+
+#contaid:hover
+{
+ border: 1px solid burlywood;
+ background: burlywood;
+ transition: 1s;
+}
+
+.co{
+    color: darkblue;
+    opacity: 0.5;
+    font-style: italic;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
